@@ -37,10 +37,11 @@ public class cshTest : MonoBehaviour
             Debug.Log("space");
         }
         //================================
-
+        /*마우스 *잘 못침1!
         if (Input.GetMouseButton(0 button))
         {
             Debug.Log(Input.mousePosition);
         }
+        */
     }
 }
