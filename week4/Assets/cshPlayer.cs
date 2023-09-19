@@ -10,12 +10,19 @@ public class cshPlayer : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-   void Update () {
+    public GameObject prefab;
 
-	//A키 누르는 순간 : z축 랜덤으로 즉시 이동(0~0.5)
-	//The moment you press the A key: Move immediately to the z-axis randomly (0-0.5)
-	if(Input.GetKeyDown(KeyCode.A)){
+    // Update is called once per frame
+    void Update () {
+        if (Input.GetMouseButtonDown(0))
+        {
+            GameObject go = GameObject.Instantiate(prefab) as GameObject;
+            go.transform.position = new Vector3(Random.Range(-2.0f, 2.0f), 1.0f, 1.0f);
+        }
+
+        //A키 누르는 순간 : z축 랜덤으로 즉시 이동(0~0.5)
+        //The moment you press the A key: Move immediately to the z-axis randomly (0-0.5)
+        if (Input.GetKeyDown(KeyCode.A)){
 		float rnd = Random.Range(0.0f, 0.5f);
 
 		//각 좌표값은 private로 지정되어있어 변경시 일괄 지정해줘야함.
