@@ -34,6 +34,14 @@ week5/[Bb]uilds/
 week5/[Ll]ogs/
 week5/[Uu]ser[Ss]ettings/
 
+week9/[Ll]ibrary/
+week9/[Tt]emp/
+week9/[Oo]bj/
+week9/[Bb]uild/
+week9/[Bb]uilds/
+week9/[Ll]ogs/
+week9/[Uu]ser[Ss]ettings/
+
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/
